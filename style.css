@@ -1,13 +1,8 @@
-/* LowKey colors: Hush Blue on deep navy, like the app and its lock screen card. */
+/* LowKey colors: Hush Blue on deep navy. Always dark, like the app opens by default. */
 :root {
-  --bg: #f3f4fc; --surface: #ffffff; --text: #14173a; --muted: #565b80;
-  --accent: #3d48b8; --rule: #dde0f3;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b0d22; --surface: #161a42; --text: #eef0ff; --muted: #a3a8cc;
-    --accent: #7d8af0; --rule: #262b5c;
-  }
+  color-scheme: dark;
+  --bg: #0b0d22; --surface: #161a42; --text: #eef0ff; --muted: #a3a8cc;
+  --accent: #7d8af0; --rule: #262b5c;
 }
 body { margin: 0; background: var(--bg); color: var(--text);
   font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
